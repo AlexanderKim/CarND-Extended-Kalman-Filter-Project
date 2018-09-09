@@ -3,6 +3,10 @@
 #include "Eigen/Dense"
 
 class KalmanFilter {
+
+private:
+    void Update(const Eigen::VectorXd &z, const Eigen::VectorXd &y);
+
 public:
 
   // state vector
